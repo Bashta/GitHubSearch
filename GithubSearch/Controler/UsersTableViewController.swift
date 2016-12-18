@@ -84,19 +84,19 @@ private extension UsersTableViewController {
         shouldHideLoader(false)
         
         isFetchingUsers = true
-        UserApi.sharedInstance.getUsersWith(language: language, page: page, perPage: perPage) { users in
+        UserApi.sharedInstance.getUsersWith(language: language, page: page, perPage: perPage) { [weak self] users in
             if !users.isEmpty {
-                self.addUsers(users)
+                self?.addUsers(users)
             }
-            self.shouldHideLoader(true)
-            self.isFetchingUsers = false
+            self?.shouldHideLoader(true)
+            self?.isFetchingUsers = false
         }
     }
     
     //MARK: - Helpers
     func addUsers(_ users: [GitHubUser]) {
-        self.dataSource.append(contentsOf: users)
-        self.currentPage += 1
+        dataSource.append(contentsOf: users)
+        currentPage += 1
         reloadTableView(self.tableView)
     }
     
