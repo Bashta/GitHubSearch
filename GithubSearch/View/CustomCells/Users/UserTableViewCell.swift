@@ -15,7 +15,7 @@ final class UserTableViewCell: UITableViewCell {
     @IBOutlet fileprivate weak var userImageView: UIImageView?
     @IBOutlet fileprivate weak var userNameLabel: UILabel?
     
-    var user: GitHubUser? {
+    var user: GitHubBasicUser? {
         didSet {
             setupCell()
         }

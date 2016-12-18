@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-final class GitHubUser: Mappable {
+final class GitHubBasicUser: Mappable {
     
     var id: Int?
     var login: String?

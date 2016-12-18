@@ -10,7 +10,7 @@ import UIKit
 
 final class UsersTableViewController: UITableViewController {
     
-    fileprivate var dataSource: [GitHubUser] = []
+    fileprivate var dataSource: [GitHubBasicUser] = []
     fileprivate var currentPage: Int = 1
     fileprivate var isFetchingUsers = false
     
@@ -94,7 +94,7 @@ private extension UsersTableViewController {
     }
     
     //MARK: - Helpers
-    func addUsers(_ users: [GitHubUser]) {
+    func addUsers(_ users: [GitHubBasicUser]) {
         dataSource.append(contentsOf: users)
         currentPage += 1
         reloadTableView(self.tableView)

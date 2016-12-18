@@ -19,13 +19,13 @@ final class UserApi {
 extension UserApi {
     //MARK: - Fetch Users API
     
-    func getUsersWith(language: String, completion:@escaping (_ users: [GitHubUser]) -> Void) {
+    func getUsersWith(language: String, completion:@escaping (_ users: [GitHubBasicUser]) -> Void) {
         Alamofire.request(UsersRouter.GetUsersWithLangage(language)).responseObject { (response: DataResponse<FetchedUsers>) in
             completion(response.result.value?.users ?? [])
         }
     }
     
-    func getUsersWith(language: String, page: Int, perPage: Int, completion:@escaping (_ users: [GitHubUser]) -> Void) {
+    func getUsersWith(language: String, page: Int, perPage: Int, completion:@escaping (_ users: [GitHubBasicUser]) -> Void) {
         Alamofire.request(UsersRouter.GetUserWithLanguage(language, page, perPage)).responseObject { (response: DataResponse<FetchedUsers>) in
             completion(response.result.value?.users ?? [])
         }

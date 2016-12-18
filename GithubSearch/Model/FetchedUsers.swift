@@ -10,7 +10,7 @@ import ObjectMapper
 
 final class FetchedUsers: Mappable {
     
-    var users: [GitHubUser]?
+    var users: [GitHubBasicUser]?
     var totalCount: Int?
     var incompleteResults: Bool?
     
