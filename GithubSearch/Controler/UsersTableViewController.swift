@@ -13,8 +13,7 @@ final class UsersTableViewController: UITableViewController {
     fileprivate var dataSource: [GitHubBasicUser] = []
     fileprivate var currentPage: Int = 1
     fileprivate var isFetchingUsers = false
-    
-    fileprivate var footerView: UIView!
+    fileprivate var footerView: UsersFooterView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +101,7 @@ private extension UsersTableViewController {
     
     func shouldHideLoader(_ bool: Bool) {
         tableView.tableFooterView?.isHidden = bool
+        bool ? footerView.activityIndicator?.startAnimating() : footerView.activityIndicator?.stopAnimating()
     }
 
     func reloadTableView(_ tableView: UITableView) {
