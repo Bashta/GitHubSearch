@@ -14,12 +14,15 @@ enum UsersRouter: URLRequestConvertible {
     
     case GetUsersWithLangage(String)
     case GetUserWithLanguage(String,Int,Int)
+    case User(String)
     
     var method: Alamofire.HTTPMethod {
         switch self {
         case .GetUsersWithLangage:
             return .get
         case .GetUserWithLanguage(_,_,_):
+            return .get
+        case .User(_):
             return .get
         }
     }
@@ -30,6 +33,8 @@ enum UsersRouter: URLRequestConvertible {
             return "search/users"
         case .GetUserWithLanguage(_,_,_):
             return "search/users"
+        case .User(let username):
+            return "users/\(username)"
         }
     }
     
@@ -49,6 +54,8 @@ enum UsersRouter: URLRequestConvertible {
         case .GetUserWithLanguage(let language, let page, let perPage):
             let params: [String: Any] = ["q": language, "page": page, "per_page": perPage]
             return try Alamofire.URLEncoding.default.encode(urlRequest, with: params)
+        case .User(_):
+            return try Alamofire.URLEncoding.default.encode(urlRequest, with: nil)
         }
     }
 }

@@ -9,6 +9,6 @@
 enum GlobalConstants {
     enum UserControllerDefaults {
         static let defaultLanguage: String = "Java"
-        static let userBulckFetch: Int = 10
+        static let userBulckFetch: Int = 15
     }
 }

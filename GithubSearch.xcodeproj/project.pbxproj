@@ -16,6 +16,9 @@
 		FB5292781E072EE900230BAC /* UsersFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5292771E072EE900230BAC /* UsersFooterView.swift */; };
 		FB52927A1E072F4D00230BAC /* UsersFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5292791E072F4D00230BAC /* UsersFooterView.xib */; };
 		FB52927C1E07353800230BAC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52927B1E07353800230BAC /* UIViewExtension.swift */; };
+		FB52927E1E074F3F00230BAC /* GitHubDetailedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52927D1E074F3F00230BAC /* GitHubDetailedUser.swift */; };
+		FB5292801E07587000230BAC /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52927F1E07587000230BAC /* UserDetailsViewController.swift */; };
+		FB5292821E076E9E00230BAC /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5292811E076E9E00230BAC /* UIAlertControllerExtension.swift */; };
 		FBC19C201E04477D00E48494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC19C111E04477D00E48494 /* Assets.xcassets */; };
 		FBC19C211E04477D00E48494 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC19C131E04477D00E48494 /* UsersTableViewController.swift */; };
 		FBC19C221E04477D00E48494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC19C181E04477D00E48494 /* AppDelegate.swift */; };
@@ -38,6 +41,9 @@
 		FB5292771E072EE900230BAC /* UsersFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersFooterView.swift; sourceTree = "<group>"; };
 		FB5292791E072F4D00230BAC /* UsersFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersFooterView.xib; sourceTree = "<group>"; };
 		FB52927B1E07353800230BAC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FB52927D1E074F3F00230BAC /* GitHubDetailedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubDetailedUser.swift; sourceTree = "<group>"; };
+		FB52927F1E07587000230BAC /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		FB5292811E076E9E00230BAC /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		FBC19BE51E042A9500E48494 /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC19C111E04477D00E48494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBC19C131E04477D00E48494 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC19C131E04477D00E48494 /* UsersTableViewController.swift */,
+				FB52927F1E07587000230BAC /* UserDetailsViewController.swift */,
 			);
 			path = Controler;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 			children = (
 				FB1F61E31E058CDA00AFED87 /* UIImageExtension.swift */,
 				FB52927B1E07353800230BAC /* UIViewExtension.swift */,
+				FB5292811E076E9E00230BAC /* UIAlertControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			children = (
 				FB1F61CA1E04A2B300AFED87 /* FetchedUsers.swift */,
 				FB1F61CC1E04C60200AFED87 /* GitHubBasicUser.swift */,
+				FB52927D1E074F3F00230BAC /* GitHubDetailedUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,15 +370,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB1F61CD1E04C60200AFED87 /* GitHubBasicUser.swift in Sources */,
+				FB52927E1E074F3F00230BAC /* GitHubDetailedUser.swift in Sources */,
 				FB5292701E06FDCB00230BAC /* GlobalConstants.swift in Sources */,
 				FB52927C1E07353800230BAC /* UIViewExtension.swift in Sources */,
 				FB5292781E072EE900230BAC /* UsersFooterView.swift in Sources */,
 				FBC19C221E04477D00E48494 /* AppDelegate.swift in Sources */,
 				FB1F61C91E04842E00AFED87 /* UserApi.swift in Sources */,
 				FBC19C291E046A6F00E48494 /* UserTableViewCell.swift in Sources */,
+				FB5292801E07587000230BAC /* UserDetailsViewController.swift in Sources */,
 				FB1F61CB1E04A2B300AFED87 /* FetchedUsers.swift in Sources */,
 				FBC19C211E04477D00E48494 /* UsersTableViewController.swift in Sources */,
 				FBC19C2E1E047CDA00E48494 /* UserRouter.swift in Sources */,
+				FB5292821E076E9E00230BAC /* UIAlertControllerExtension.swift in Sources */,
 				FB1F61E41E058CDA00AFED87 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

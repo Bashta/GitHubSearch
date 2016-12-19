@@ -32,6 +32,8 @@ extension UsersTableViewController {
     //MARK: - UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        pushDetailedControllerWith(user: dataSource[indexPath.row])
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -109,5 +111,14 @@ private extension UsersTableViewController {
         tableView.reloadData()
         tableView.layoutIfNeeded()
         tableView.setContentOffset(contentOffset, animated: false)
+    }
+    
+    func pushDetailedControllerWith(user: GitHubBasicUser) {
+        guard let username = user.login,
+              let viewController = self.storyboard?.instantiateViewController(withIdentifier: UserDetailsViewController.storyboardId) as? UserDetailsViewController else {
+            return
+        }
+        viewController.username = username
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

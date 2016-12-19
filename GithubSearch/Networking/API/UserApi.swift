@@ -30,4 +30,11 @@ extension UserApi {
             completion(response.result.value?.users ?? [])
         }
     }
+    
+    func fetchUserWith(username: String, completion:@escaping (_ user: GitHubDetailedUser?) -> Void) {
+        Alamofire.request(UsersRouter.User(username)).responseObject { (response: DataResponse<GitHubDetailedUser>) in
+            completion(response.result.value)
+        }
+    }
+
 }
