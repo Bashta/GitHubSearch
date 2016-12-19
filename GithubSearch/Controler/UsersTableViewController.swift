@@ -10,7 +10,12 @@ import UIKit
 
 final class UsersTableViewController: UITableViewController {
     
-    fileprivate var dataSource: [GitHubBasicUser] = []
+    fileprivate var dataSource: [GitHubBasicUser] = [] {
+        didSet {
+            saveUserForTodayWidget()
+        }
+    }
+    
     fileprivate var currentPage: Int = 1
     fileprivate var isFetchingUsers = false
     fileprivate var footerView: UsersFooterView!
@@ -120,5 +125,13 @@ private extension UsersTableViewController {
         }
         viewController.username = username
         self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func saveUserForTodayWidget() {
+        let user = dataSource.randomElement()
+        guard let login = user?.login, let url = user?.avatarUrl else {
+            return
+        }
+        DataManager.sharedInstance.updateUserOfTheDayWith(name: login, pictureUrl: url)
     }
 }

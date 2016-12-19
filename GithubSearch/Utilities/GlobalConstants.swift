@@ -11,4 +11,14 @@ enum GlobalConstants {
         static let defaultLanguage: String = "Java"
         static let userBulckFetch: Int = 15
     }
+    
+    enum AppGroups {
+        static let defaultAppGroupName: String = "group.com.GithubSearch"
+    }
+    
+    enum Defaults {
+        static let nameKey: String = "name"
+        static let urlKey: String = "url"
+        static let lastUpdated: String = "lastUpdated"
+    }
 }

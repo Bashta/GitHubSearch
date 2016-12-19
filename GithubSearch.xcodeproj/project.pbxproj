@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E9C8299355F176065F81132 /* Pods_GithubSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80673F0EE0EE2DE2C4E07B85 /* Pods_GithubSearch.framework */; };
+		F8E165F5ECABF5C6E70CB61E /* Pods_GSToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484357BD993E719AB8EBFA23 /* Pods_GSToday.framework */; };
 		FB1F61C91E04842E00AFED87 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F61C81E04842E00AFED87 /* UserApi.swift */; };
 		FB1F61CB1E04A2B300AFED87 /* FetchedUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F61CA1E04A2B300AFED87 /* FetchedUsers.swift */; };
 		FB1F61CD1E04C60200AFED87 /* GitHubBasicUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F61CC1E04C60200AFED87 /* GitHubBasicUser.swift */; };
@@ -19,6 +20,17 @@
 		FB52927E1E074F3F00230BAC /* GitHubDetailedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52927D1E074F3F00230BAC /* GitHubDetailedUser.swift */; };
 		FB5292801E07587000230BAC /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52927F1E07587000230BAC /* UserDetailsViewController.swift */; };
 		FB5292821E076E9E00230BAC /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5292811E076E9E00230BAC /* UIAlertControllerExtension.swift */; };
+		FB5292891E07756100230BAC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5292881E07756100230BAC /* NotificationCenter.framework */; };
+		FB52928C1E07756100230BAC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52928B1E07756100230BAC /* TodayViewController.swift */; };
+		FB52928F1E07756100230BAC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB52928D1E07756100230BAC /* MainInterface.storyboard */; };
+		FB5292931E07756100230BAC /* GSToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB5292871E07756100230BAC /* GSToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB52929A1E077D7800230BAC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5292981E077D7800230BAC /* Alamofire.framework */; };
+		FB52929B1E077D7800230BAC /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5292991E077D7800230BAC /* AlamofireImage.framework */; };
+		FB52929E1E077FAB00230BAC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52929D1E077FAB00230BAC /* DataManager.swift */; };
+		FB52929F1E07841000230BAC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52929D1E077FAB00230BAC /* DataManager.swift */; };
+		FB5292A01E07843900230BAC /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52926F1E06FDCB00230BAC /* GlobalConstants.swift */; };
+		FB5292A11E0788DE00230BAC /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F61E31E058CDA00AFED87 /* UIImageExtension.swift */; };
+		FB5292A31E078B1B00230BAC /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5292A21E078B1B00230BAC /* CollectionExtension.swift */; };
 		FBC19C201E04477D00E48494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC19C111E04477D00E48494 /* Assets.xcassets */; };
 		FBC19C211E04477D00E48494 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC19C131E04477D00E48494 /* UsersTableViewController.swift */; };
 		FBC19C221E04477D00E48494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC19C181E04477D00E48494 /* AppDelegate.swift */; };
@@ -29,7 +41,34 @@
 		FBC19C2E1E047CDA00E48494 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC19C2D1E047CDA00E48494 /* UserRouter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FB5292911E07756100230BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC19BDD1E042A9500E48494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB5292861E07756100230BAC;
+			remoteInfo = GSToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB5292971E07756100230BAC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB5292931E07756100230BAC /* GSToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		023932B48D5FAC6AAA6921FA /* Pods-GSToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-GSToday/Pods-GSToday.release.xcconfig"; sourceTree = "<group>"; };
+		0D50C55F565225A0EFD155E8 /* Pods-GSToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GSToday/Pods-GSToday.debug.xcconfig"; sourceTree = "<group>"; };
+		484357BD993E719AB8EBFA23 /* Pods_GSToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2784B77744FEACB291F8F9 /* Pods-GithubSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubSearch/Pods-GithubSearch.release.xcconfig"; sourceTree = "<group>"; };
 		80673F0EE0EE2DE2C4E07B85 /* Pods_GithubSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AF53E3D7830256FD3CC93E /* Pods-GithubSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubSearch/Pods-GithubSearch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +83,17 @@
 		FB52927D1E074F3F00230BAC /* GitHubDetailedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubDetailedUser.swift; sourceTree = "<group>"; };
 		FB52927F1E07587000230BAC /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		FB5292811E076E9E00230BAC /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		FB5292871E07756100230BAC /* GSToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GSToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5292881E07756100230BAC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FB52928B1E07756100230BAC /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		FB52928E1E07756100230BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FB5292901E07756100230BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5292981E077D7800230BAC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GithubSearch-fwfjfxhnydjxdxgovdvmzfcihrfk/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		FB5292991E077D7800230BAC /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GithubSearch-fwfjfxhnydjxdxgovdvmzfcihrfk/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
+		FB52929C1E077EB500230BAC /* GSToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GSToday.entitlements; sourceTree = "<group>"; };
+		FB52929D1E077FAB00230BAC /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FB5292A21E078B1B00230BAC /* CollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		FB5292A41E078DA600230BAC /* GithubSearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = GithubSearch.entitlements; path = ../GithubSearch.entitlements; sourceTree = "<group>"; };
 		FBC19BE51E042A9500E48494 /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC19C111E04477D00E48494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBC19C131E04477D00E48494 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +107,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB5292841E07756100230BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB52929A1E077D7800230BAC /* Alamofire.framework in Frameworks */,
+				FB52929B1E077D7800230BAC /* AlamofireImage.framework in Frameworks */,
+				FB5292891E07756100230BAC /* NotificationCenter.framework in Frameworks */,
+				F8E165F5ECABF5C6E70CB61E /* Pods_GSToday.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBC19BE21E042A9500E48494 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,7 +132,11 @@
 		292B03277F8FB4EE829596E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB5292981E077D7800230BAC /* Alamofire.framework */,
+				FB5292991E077D7800230BAC /* AlamofireImage.framework */,
 				80673F0EE0EE2DE2C4E07B85 /* Pods_GithubSearch.framework */,
+				FB5292881E07756100230BAC /* NotificationCenter.framework */,
+				484357BD993E719AB8EBFA23 /* Pods_GSToday.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,6 +146,8 @@
 			children = (
 				94AF53E3D7830256FD3CC93E /* Pods-GithubSearch.debug.xcconfig */,
 				5D2784B77744FEACB291F8F9 /* Pods-GithubSearch.release.xcconfig */,
+				0D50C55F565225A0EFD155E8 /* Pods-GSToday.debug.xcconfig */,
+				023932B48D5FAC6AAA6921FA /* Pods-GSToday.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -97,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				FB52926F1E06FDCB00230BAC /* GlobalConstants.swift */,
+				FB52929D1E077FAB00230BAC /* DataManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -111,10 +179,22 @@
 			path = GithubSearch/View/FooterView;
 			sourceTree = SOURCE_ROOT;
 		};
+		FB52928A1E07756100230BAC /* GSToday */ = {
+			isa = PBXGroup;
+			children = (
+				FB52929C1E077EB500230BAC /* GSToday.entitlements */,
+				FB52928B1E07756100230BAC /* TodayViewController.swift */,
+				FB52928D1E07756100230BAC /* MainInterface.storyboard */,
+				FB5292901E07756100230BAC /* Info.plist */,
+			);
+			path = GSToday;
+			sourceTree = "<group>";
+		};
 		FBC19BDC1E042A9500E48494 = {
 			isa = PBXGroup;
 			children = (
 				FBC19C0F1E04477D00E48494 /* GithubSearch */,
+				FB52928A1E07756100230BAC /* GSToday */,
 				FBC19BE61E042A9500E48494 /* Products */,
 				C9AB15C0A6502852FA1C62DF /* Pods */,
 				292B03277F8FB4EE829596E4 /* Frameworks */,
@@ -125,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC19BE51E042A9500E48494 /* GithubSearch.app */,
+				FB5292871E07756100230BAC /* GSToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +248,7 @@
 				FB1F61E31E058CDA00AFED87 /* UIImageExtension.swift */,
 				FB52927B1E07353800230BAC /* UIViewExtension.swift */,
 				FB5292811E076E9E00230BAC /* UIAlertControllerExtension.swift */,
+				FB5292A21E078B1B00230BAC /* CollectionExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -193,6 +275,7 @@
 		FBC19C171E04477D00E48494 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				FB5292A41E078DA600230BAC /* GithubSearch.entitlements */,
 				FBC19C181E04477D00E48494 /* AppDelegate.swift */,
 				FBC19C191E04477D00E48494 /* Info.plist */,
 			);
@@ -246,6 +329,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FB5292861E07756100230BAC /* GSToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5292961E07756100230BAC /* Build configuration list for PBXNativeTarget "GSToday" */;
+			buildPhases = (
+				903E4CB099381CF7F67A9C85 /* [CP] Check Pods Manifest.lock */,
+				FB5292831E07756100230BAC /* Sources */,
+				FB5292841E07756100230BAC /* Frameworks */,
+				FB5292851E07756100230BAC /* Resources */,
+				D3B3BD14FAB687E4C72838E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSToday;
+			productName = GSToday;
+			productReference = FB5292871E07756100230BAC /* GSToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FBC19BE41E042A9500E48494 /* GithubSearch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBC19BF71E042A9500E48494 /* Build configuration list for PBXNativeTarget "GithubSearch" */;
@@ -256,10 +358,12 @@
 				FBC19BE31E042A9500E48494 /* Resources */,
 				0821FCCA4CEFDBB6622F448E /* [CP] Embed Pods Frameworks */,
 				C86876E50CD50BBB9A895001 /* [CP] Copy Pods Resources */,
+				FB5292971E07756100230BAC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FB5292921E07756100230BAC /* PBXTargetDependency */,
 			);
 			name = GithubSearch;
 			productName = GithubSearch;
@@ -276,10 +380,25 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = NativeSolutions;
 				TargetAttributes = {
+					FB5292861E07756100230BAC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5JWGM7A2T3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					FBC19BE41E042A9500E48494 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 5JWGM7A2T3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -297,11 +416,20 @@
 			projectRoot = "";
 			targets = (
 				FBC19BE41E042A9500E48494 /* GithubSearch */,
+				FB5292861E07756100230BAC /* GSToday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FB5292851E07756100230BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB52928F1E07756100230BAC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBC19BE31E042A9500E48494 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +458,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubSearch/Pods-GithubSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		903E4CB099381CF7F67A9C85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C86876E50CD50BBB9A895001 /* [CP] Copy Pods Resources */ = {
@@ -362,14 +505,41 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		D3B3BD14FAB687E4C72838E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GSToday/Pods-GSToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FB5292831E07756100230BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB52928C1E07756100230BAC /* TodayViewController.swift in Sources */,
+				FB5292A01E07843900230BAC /* GlobalConstants.swift in Sources */,
+				FB52929F1E07841000230BAC /* DataManager.swift in Sources */,
+				FB5292A11E0788DE00230BAC /* UIImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBC19BE11E042A9500E48494 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FB1F61CD1E04C60200AFED87 /* GitHubBasicUser.swift in Sources */,
+				FB52929E1E077FAB00230BAC /* DataManager.swift in Sources */,
 				FB52927E1E074F3F00230BAC /* GitHubDetailedUser.swift in Sources */,
 				FB5292701E06FDCB00230BAC /* GlobalConstants.swift in Sources */,
 				FB52927C1E07353800230BAC /* UIViewExtension.swift in Sources */,
@@ -381,6 +551,7 @@
 				FB1F61CB1E04A2B300AFED87 /* FetchedUsers.swift in Sources */,
 				FBC19C211E04477D00E48494 /* UsersTableViewController.swift in Sources */,
 				FBC19C2E1E047CDA00E48494 /* UserRouter.swift in Sources */,
+				FB5292A31E078B1B00230BAC /* CollectionExtension.swift in Sources */,
 				FB5292821E076E9E00230BAC /* UIAlertControllerExtension.swift in Sources */,
 				FB1F61E41E058CDA00AFED87 /* UIImageExtension.swift in Sources */,
 			);
@@ -388,7 +559,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FB5292921E07756100230BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB5292861E07756100230BAC /* GSToday */;
+			targetProxy = FB5292911E07756100230BAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		FB52928D1E07756100230BAC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB52928E1E07756100230BAC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		FBC19C1C1E04477D00E48494 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -408,6 +595,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FB5292941E07756100230BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D50C55F565225A0EFD155E8 /* Pods-GSToday.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GSToday/GSToday.entitlements;
+				DEVELOPMENT_TEAM = 5JWGM7A2T3;
+				INFOPLIST_FILE = GSToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.nativesolutions.GithubSearch.GSToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FB5292951E07756100230BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023932B48D5FAC6AAA6921FA /* Pods-GSToday.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GSToday/GSToday.entitlements;
+				DEVELOPMENT_TEAM = 5JWGM7A2T3;
+				INFOPLIST_FILE = GSToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.nativesolutions.GithubSearch.GSToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		FBC19BF51E042A9500E48494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,7 +722,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94AF53E3D7830256FD3CC93E /* Pods-GithubSearch.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GithubSearch/GithubSearch.entitlements;
 				DEVELOPMENT_TEAM = 5JWGM7A2T3;
 				INFOPLIST_FILE = "$(SRCROOT)/GithubSearch/Supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -519,7 +740,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D2784B77744FEACB291F8F9 /* Pods-GithubSearch.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GithubSearch/GithubSearch.entitlements;
 				DEVELOPMENT_TEAM = 5JWGM7A2T3;
 				INFOPLIST_FILE = "$(SRCROOT)/GithubSearch/Supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -534,6 +757,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB5292961E07756100230BAC /* Build configuration list for PBXNativeTarget "GSToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5292941E07756100230BAC /* Debug */,
+				FB5292951E07756100230BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FBC19BE01E042A9500E48494 /* Build configuration list for PBXProject "GithubSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

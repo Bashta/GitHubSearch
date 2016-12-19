@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import AlamofireImage
 
 extension UIImage {
     static func fetchImageWith(urlString: String, completion: @escaping (_ image: UIImage?) -> Void) {
