@@ -1,0 +1,12 @@
+language: objective-c
+
+branches:
+         only:
+                  - develop
+
+         xcode_project: GithubSearch.xcodeproj
+         osx_image: xcode8.2
+         xcode_sdk: iphonesimulator8.0
+
+         script:
+                 - xcodebuild clean build test -project GithubSearch.xcodeproj
