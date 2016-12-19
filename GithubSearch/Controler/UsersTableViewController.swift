@@ -25,7 +25,7 @@ final class UsersTableViewController: UITableViewController {
         
         setupController()
         setupUI()
-
+        
         fetchUsersWith(language: GlobalConstants.UserControllerDefaults.defaultLanguage,
                        page: currentPage,
                        perPage: GlobalConstants.UserControllerDefaults.userBulckFetch)
@@ -83,6 +83,12 @@ private extension UsersTableViewController {
     func setupUI() {
         footerView = UsersFooterView(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: self.view.bounds.width, height: 40)))
         tableView.tableFooterView = footerView
+        
+        #if BLUE
+            self.view.backgroundColor = .blue
+        #else
+            self.view.backgroundColor = .black
+        #endif
     }
 
     //MARK: - API Comunications
