@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3E9C8299355F176065F81132 /* Pods_GithubSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80673F0EE0EE2DE2C4E07B85 /* Pods_GithubSearch.framework */; };
 		F8E165F5ECABF5C6E70CB61E /* Pods_GSToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484357BD993E719AB8EBFA23 /* Pods_GSToday.framework */; };
+		FB0C0A841E0CA2AF0040ACDF /* GithubSearchBlackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0A831E0CA2AF0040ACDF /* GithubSearchBlackTests.swift */; };
+		FB0C0A8C1E0CA2EF0040ACDF /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C0A8B1E0CA2EF0040ACDF /* APITest.swift */; };
 		FB1F61C91E04842E00AFED87 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F61C81E04842E00AFED87 /* UserApi.swift */; };
 		FB1F61CB1E04A2B300AFED87 /* FetchedUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F61CA1E04A2B300AFED87 /* FetchedUsers.swift */; };
 		FB1F61CD1E04C60200AFED87 /* GitHubBasicUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F61CC1E04C60200AFED87 /* GitHubBasicUser.swift */; };
@@ -65,6 +67,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FB0C0A861E0CA2AF0040ACDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC19BDD1E042A9500E48494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC19BE41E042A9500E48494;
+			remoteInfo = GithubSearchBlack;
+		};
 		FB5292911E07756100230BAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FBC19BDD1E042A9500E48494 /* Project object */;
@@ -113,6 +122,10 @@
 		5D2784B77744FEACB291F8F9 /* Pods-GithubSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubSearch/Pods-GithubSearch.release.xcconfig"; sourceTree = "<group>"; };
 		80673F0EE0EE2DE2C4E07B85 /* Pods_GithubSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AF53E3D7830256FD3CC93E /* Pods-GithubSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubSearch/Pods-GithubSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0C0A811E0CA2AF0040ACDF /* GithubSearchBlackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubSearchBlackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0C0A831E0CA2AF0040ACDF /* GithubSearchBlackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchBlackTests.swift; sourceTree = "<group>"; };
+		FB0C0A851E0CA2AF0040ACDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0C0A8B1E0CA2EF0040ACDF /* APITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
 		FB1F61C81E04842E00AFED87 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		FB1F61CA1E04A2B300AFED87 /* FetchedUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedUsers.swift; sourceTree = "<group>"; };
 		FB1F61CC1E04C60200AFED87 /* GitHubBasicUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubBasicUser.swift; sourceTree = "<group>"; };
@@ -150,6 +163,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB0C0A7E1E0CA2AF0040ACDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB5292841E07756100230BAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +223,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB0C0A821E0CA2AF0040ACDF /* GithubSearchBlackTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C0A831E0CA2AF0040ACDF /* GithubSearchBlackTests.swift */,
+				FB0C0A851E0CA2AF0040ACDF /* Info.plist */,
+				FB0C0A8B1E0CA2EF0040ACDF /* APITest.swift */,
+			);
+			path = GithubSearchBlackTests;
+			sourceTree = "<group>";
+		};
 		FB1F61C71E04841F00AFED87 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +276,7 @@
 			children = (
 				FBC19C0F1E04477D00E48494 /* GithubSearch */,
 				FB52928A1E07756100230BAC /* GSToday */,
+				FB0C0A821E0CA2AF0040ACDF /* GithubSearchBlackTests */,
 				FBC19BE61E042A9500E48494 /* Products */,
 				C9AB15C0A6502852FA1C62DF /* Pods */,
 				292B03277F8FB4EE829596E4 /* Frameworks */,
@@ -258,6 +289,7 @@
 				FBC19BE51E042A9500E48494 /* GithubSearchBlack.app */,
 				FB5292871E07756100230BAC /* GSToday.appex */,
 				FBB648F31E079BE600BFDE03 /* GithubSearchBlue.app */,
+				FB0C0A811E0CA2AF0040ACDF /* GithubSearchBlackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,6 +414,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FB0C0A801E0CA2AF0040ACDF /* GithubSearchBlackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0C0A8A1E0CA2AF0040ACDF /* Build configuration list for PBXNativeTarget "GithubSearchBlackTests" */;
+			buildPhases = (
+				FB0C0A7D1E0CA2AF0040ACDF /* Sources */,
+				FB0C0A7E1E0CA2AF0040ACDF /* Frameworks */,
+				FB0C0A7F1E0CA2AF0040ACDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB0C0A871E0CA2AF0040ACDF /* PBXTargetDependency */,
+			);
+			name = GithubSearchBlackTests;
+			productName = GithubSearchBlackTests;
+			productReference = FB0C0A811E0CA2AF0040ACDF /* GithubSearchBlackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FB5292861E07756100230BAC /* GSToday */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5292961E07756100230BAC /* Build configuration list for PBXNativeTarget "GSToday" */;
@@ -455,6 +505,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = NativeSolutions;
 				TargetAttributes = {
+					FB0C0A801E0CA2AF0040ACDF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5JWGM7A2T3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FBC19BE41E042A9500E48494;
+					};
 					FB5292861E07756100230BAC = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 5JWGM7A2T3;
@@ -496,11 +552,19 @@
 				FBC19BE41E042A9500E48494 /* GithubSearchBlack */,
 				FBB648CF1E079BE600BFDE03 /* GithubSearchBlue */,
 				FB5292861E07756100230BAC /* GSToday */,
+				FB0C0A801E0CA2AF0040ACDF /* GithubSearchBlackTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FB0C0A7F1E0CA2AF0040ACDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB5292851E07756100230BAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +723,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FB0C0A7D1E0CA2AF0040ACDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0C0A8C1E0CA2EF0040ACDF /* APITest.swift in Sources */,
+				FB0C0A841E0CA2AF0040ACDF /* GithubSearchBlackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB5292831E07756100230BAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -719,6 +792,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FB0C0A871E0CA2AF0040ACDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC19BE41E042A9500E48494 /* GithubSearchBlack */;
+			targetProxy = FB0C0A861E0CA2AF0040ACDF /* PBXContainerItemProxy */;
+		};
 		FB5292921E07756100230BAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FB5292861E07756100230BAC /* GSToday */;
@@ -759,6 +837,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FB0C0A881E0CA2AF0040ACDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5JWGM7A2T3;
+				INFOPLIST_FILE = GithubSearchBlackTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.nativesolutions.GithubSearchBlackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubSearchBlack.app/GithubSearchBlack";
+			};
+			name = Debug;
+		};
+		FB0C0A891E0CA2AF0040ACDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5JWGM7A2T3;
+				INFOPLIST_FILE = GithubSearchBlackTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.nativesolutions.GithubSearchBlackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubSearchBlack.app/GithubSearchBlack";
+			};
+			name = Release;
+		};
 		FB5292941E07756100230BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D50C55F565225A0EFD155E8 /* Pods-GSToday.debug.xcconfig */;
@@ -965,6 +1073,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB0C0A8A1E0CA2AF0040ACDF /* Build configuration list for PBXNativeTarget "GithubSearchBlackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0C0A881E0CA2AF0040ACDF /* Debug */,
+				FB0C0A891E0CA2AF0040ACDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FB5292961E07756100230BAC /* Build configuration list for PBXNativeTarget "GSToday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
